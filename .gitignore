@@ -1,0 +1,20 @@
+*
+
+!.gitignore
+!LICENSE
+!README.md
+
+!CyberApocalypse23/
+# /CyberApocalypse23/**
+
+!CyberApocalypse23/blockchain_shooting_101/
+!CyberApocalypse23/blockchain_shooting_101/**
+
+# !CyberApocalypse23/crypto_perfect_synchronization/
+# !CyberApocalypse23/crypto_perfect_synchronization/**
+
+# !CyberApocalypse23/ml_the_trial_of_the_sky/
+# !CyberApocalypse23/ml_the_trial_of_the_sky/**
+
+# !CyberApocalypse23/ml_reconf/
+# !CyberApocalypse23/ml_reconf/**
