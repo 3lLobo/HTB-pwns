@@ -24,10 +24,15 @@ yarn start
 
  - Python
 
+If you are running the challenge locally, make sure the endpoint matches and run the `run_local.py` script.
+Otherwise instert the intel received from the `tcp` endpoint in `run.py` and run the very same script.
+
 ```bash
 poetry install
-# Execute the script
+# Execute the local script
 poetry run python run_local.py
+# || Execute the remote script
+poetry run python run.py
 ```
 
 ### Writeup
@@ -50,7 +55,21 @@ Connect to the tcp endpoint and listen for instructions.
 You will receive a private key and a contract address.
 
 ```bash
-nc <ip> <port> -vl
+nc <ip> <port> -v
+```
+
+A response with your private key and the contract address will be returned.
+
+```bash
+1 - Connection information
+2 - Restart Instance
+3 - Get flag
+action? 1
+
+Private key     :  0xxx
+Address         :  0xxx
+Target contract :  0xxx
+Setup contract  :  0xxx
 ```
 
 
@@ -85,7 +104,16 @@ nc <ip> <port> -vl
 To get the flag, again connect to the second endpoint and ask for the flag.
 
 ```bash
-nc <ip> <port> -vl
+nc  <ip> <port> -v
+```
+You;ll now be granted the flag.
+
+```bash
+1 - Connection information
+2 - Restart Instance
+3 - Get flag
+action? 3
+HTB{f33l5_n1c3_h1771n6_y0ur_74r6375}
 ```
 
 
