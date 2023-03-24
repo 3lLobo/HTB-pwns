@@ -1,18 +1,22 @@
-# HTB Cyber Apocalypse 2023
-## Blockchain Shooting 101
+# Blockchain Shooting 101
 
 Writeup for the HTB Cyber Apocalypse 2023 Blockchain Shooting 101 challenge. I believe difficulty was `very easy`.
 
-The box provided two endpoints. One `http` enpoint for the blockchain and a `tcp` one for the instructions and flag.
+The box provided two endpoints. One `http` endpoint for the blockchain and a `tcp` one for the instructions and flag.
 
-### Setup
+## Story
+
+> Your metallic body might have advanced targeting systems, but hitting a target is not just about technical proficiency. To truly master the art of targeting, you must learn to trust your instincts and develop a keen sense of intuition. During this training, you will emerge as a skilled marksman who can hit the targets with deadly precision. It's about time to train and prove yourself in the Shooting Area, can you make it?
+
+
+## Setup
 
 Solved with pythons web3 library. 
 during the challenge you got an endpoint to connect to the blockchain with an account address and the deployed contract address.
 
 For testing I spin up a local blockchain with `ganache` and deployed the contract.
 
-#### Dependencies
+## Dependencies
 
 - nodeJs
   
@@ -22,10 +26,11 @@ yarn
 yarn start
 ```
 
- - Python
+- python
+
 
 If you are running the challenge locally, make sure the endpoint matches and run the `run_local.py` script.
-Otherwise instert the intel received from the `tcp` endpoint in `run.py` and run the very same script.
+Otherwise insert the intel received from the `tcp` endpoint in `run.py` and run the very same script.
 
 ```bash
 poetry install
@@ -35,9 +40,9 @@ poetry run python run_local.py
 poetry run python run.py
 ```
 
-### Writeup
+## Writeup
 
-#### Notes
+### Notes
 
 We get two `solidity` contracts. `Setup.sol` is the main contract and has the `isSolved` function which ultimatly will trigger the return of the flag.
 Is checks if three boolean values are set to true. The constructor creates an instance of the second contract and stores it in `TARGET`.
@@ -49,7 +54,7 @@ Further the `fallback` and `receive` functions are implemented and checked by si
 
 > The `receive` function determines what happens when the contract receives Ether.
 
-#### The Netcat 🐈‍⬛
+### The Netcat 🐈‍⬛
 
 Connect to the tcp endpoint and listen for instructions.
 You will receive a private key and a contract address.
@@ -73,7 +78,7 @@ Setup contract  :  0xxx
 ```
 
 
-#### The Pwn
+### The Pwn
 
 
 1. Create a web3 instance and connect to the blockchain endpoint.
@@ -99,7 +104,7 @@ Setup contract  :  0xxx
 12. Finally, verify the pwn by calling the `isSolved` function from the `Setup.sol` contract interface.
 13. If you are on localhost, you are done now. Congrats 🎉
 
-### Flag
+## Flag
 
 To get the flag, again connect to the second endpoint and ask for the flag.
 
