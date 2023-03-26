@@ -1,6 +1,6 @@
+# Remote Computation
 
-
-
+---
 ## Instructions
 
 NC option 2 returns HELP instructions:

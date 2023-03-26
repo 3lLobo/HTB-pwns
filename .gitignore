@@ -3,7 +3,7 @@
 !.gitignore
 !LICENSE
 !README.md
-!update_gitingore.sh
+!update_gitignore.sh
 
 !CyberApocalypse23/
 
@@ -27,6 +27,7 @@
 
 !CyberApocalypse23/misc_persistence/
 !CyberApocalypse23/misc_persistence/**
+
 !CyberApocalypse23/ml_mysterious_learnings/
 !CyberApocalypse23/ml_mysterious_learnings/**
 
