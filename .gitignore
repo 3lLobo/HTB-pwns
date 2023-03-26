@@ -3,6 +3,7 @@
 !.gitignore
 !LICENSE
 !README.md
+!update_gitingore.sh
 
 !CyberApocalypse23/
 
@@ -26,3 +27,38 @@
 
 !CyberApocalypse23/misc_persistence/
 !CyberApocalypse23/misc_persistence/**
+!CyberApocalypse23/ml_mysterious_learnings/
+!CyberApocalypse23/ml_mysterious_learnings/**
+
+!CyberApocalypse23/blockchain_navigating_the_unknown/
+!CyberApocalypse23/blockchain_navigating_the_unknown/**
+
+!CyberApocalypse23/blockchain_the_art_of_deception/
+!CyberApocalypse23/blockchain_the_art_of_deception/**
+
+!CyberApocalypse23/ml_reading_the_stars/
+!CyberApocalypse23/ml_reading_the_stars/**
+
+!CyberApocalypse23/misc_remote_computation/
+!CyberApocalypse23/misc_remote_computation/**
+
+!CyberApocalypse23/ml_vision_chip/
+!CyberApocalypse23/ml_vision_chip/**
+
+!CyberApocalypse23/web_trapped_source/
+!CyberApocalypse23/web_trapped_source/**
+
+!CyberApocalypse23/web_unearthly_shop/
+!CyberApocalypse23/web_unearthly_shop/**
+
+!CyberApocalypse23/ml_on_the_rescue/
+!CyberApocalypse23/ml_on_the_rescue/**
+
+!CyberApocalypse23/web_traptrack/
+!CyberApocalypse23/web_traptrack/**
+
+!CyberApocalypse23/rev_needle_haystack/
+!CyberApocalypse23/rev_needle_haystack/**
+
+!CyberApocalypse23/ml_last_hope/
+!CyberApocalypse23/ml_last_hope/**
